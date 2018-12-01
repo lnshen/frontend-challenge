@@ -11,16 +11,20 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 100%;
+  width: 360px;
+}
+
+.status-bar {
+  position: fixed;
 }
 
 nav {
   background-color: #E0E0E0;
-  margin: 0 auto;
+  margin: 24px auto;
   position: fixed;
   padding-left: 16px;
   padding-top: 32px;
-  width: 100%;
+  width: 360px;
   height: 80px;
   box-shadow: 0 3px 5px rgba(0,0,0,0.19)
 }
@@ -43,8 +47,8 @@ nav {
 
 .walk-time-detail {
   background-color: #009688;
-  padding: 112px 16px 0px 16px;
-  height: 165px;
+  padding: 136px 16px 0px 16px;
+  height: 189px;
 }
 
 .icon {
@@ -72,18 +76,11 @@ thead th:nth-child(1) {
 }
 
 thead th:nth-child(2) {
-  width: 45%;
-  text-align: left;
+  width: 48%;
 }
 
 thead th:nth-child(3) {
-  width: 25%;
-  text-align: left;
-}
-
-thead th:nth-child(4) {
-  width: 15%;
-  text-align: center;
+  width: 32%;
 }
 
 th, td {
@@ -91,57 +88,37 @@ th, td {
 }
 
 th {
-  text-transform: uppercase;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.4em;
 }
 
 td {
-  font-size: 1.2em;
-  text-align: left;
-}
-
-
-tr td:nth-child(1), tr td:nth-child(4) {
-  text-align: center;
-}
-
-tr td:nth-child(1) {
   font-size: 1.4em;
-  font-weight: bold;
-}
-
-tr td:nth-child(4) {
+  text-align: left;
   vertical-align: top;
 }
 
-.minute {
-  font-size: 0.8em;
+tr td:nth-child(1) {
+  text-align: center;
+  font-weight: bold;
 }
 
-.eta-late {
+
+.direction {
+  font-size: 0.8em;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+.minute {
+  font-size: 1em;
+}
+
+.reroute {
   color: red;
 }
 
 .out-of-service {
-  color: #EEEEEE;
-}
-
-@media screen and (min-width: 575px){
-
-  .walk-time {
-    font-size: 1.6em;
-    color: #fff;
-  }
-  th {
-    font-size: 1.2em;
-  }
-
-  td {
-    font-size: 1.6em;
-  }
-
-  tr td:nth-child(1) {
-    font-size: 2em;
-    font-weight: 500;
-  }
-  
+  color: darkgray;
 }
