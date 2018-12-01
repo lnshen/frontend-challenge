@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BusyBus Frontend Challenge</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
@@ -10,13 +11,14 @@
   <body>
     <main>
       <section class="container">
+        <div class="status-bar"><img src="images/statusbar.png" alt="status bar"></img></div>
         <nav>
-          <div class="menu">
-            <img src="images/hamburger.png" alt="menu icon"></img>
-          </div>
-          <div class="title">
-            Washington & State
-          </div>
+            <div class="menu">
+              <img src="images/hamburger.png" alt="menu icon"></img>
+            </div>
+            <div class="title">
+              Washington & State
+            </div>
         </nav>
         <section class="walk-time-detail">
           <div class="icon">
@@ -31,126 +33,80 @@
             <thead>
               <th scope="col">Line</th>
               <th scope="col">Destination</th>
-              <th scope="col">Direction</th>
-              <th scope="col">ETA</th>
+              <th scope="col">Arriving in</th>
             </thead>
             <tbody>
               <tr>
                 <td>124</td>
-                <td>Navy Pier</td>
-                <td>East</td>
                 <td>
-                  <div class="eta-late">
-                    10
-                  </div>
-                  <div class="eta-late minute">
-                    min
-                  </div>
+                  <div>Navy Pier</div>
+                  <div class="direction">EASTBOUND</div>
                 </td>
+                <td>13, 23, 33 <span class="minute">min</span></td>
               </tr>
               <tr>
                 <td>60</td>
-                <td>Randolph/Harbor Dr</td>
-                <td>East</td>
                 <td>
-                  <div>
-                    20
-                  </div>
-                  <div class="minute">
-                    min
-                  </div>
+                  <div>Randolph/Harbor Dr</div>
+                  <div class="direction">EASTBOUND</div>
                 </td>
+                <td>15, 35, 55 <span class="minute">min</span></td>
               </tr>
               <tr>
                 <td>151</td>
-                <td>Devon/Clark</td>
-                <td>North</td>
                 <td>
-                  <div>
-                    16
-                  </div>
-                  <div class="minute">
-                    min
-                  </div>
+                  <div>Devon/Clark</div>
+                  <div class="direction">NORTHBOUND</div>
                 </td>
+                <td>15, 31, 47 <span class="minute">min</span></td>
               </tr>
               <tr>
                 <td>124</td>
-                <td>Navy Pier</td>
-                <td>South</td>
                 <td>
-                  <div class="eta-late">
-                    10
-                  </div>
-                  <div class="eta-late minute">
-                    min
-                  </div>
+                  <div>Navy Pier</div>
+                  <div class="direction">Southbound</div>
                 </td>
+                <td>18, 28, 38 <span class="minute">min</span></td>
               </tr>
               <tr>
                 <td>J14</td>
-                <td>103rd/Stony Island</td>
-                <td>South</td>
                 <td>
-                  <div>
-                    15
-                  </div>
-                  <div class="minute">
-                    min
-                  </div>
+                  <div>103rd/Stony Island</div>
+                  <div class="direction">EASTBOUND</div>
                 </td>
+                <td>20, 35, 50 <span class="minute">min</span></td>
               </tr>
-              <tr>
+              <tr class="reroute">
                 <td>6X</td>
-                <td>Jackson Park Express</td>
-                <td>Reroute</td>
                 <td>
-                  <div class>
-                    --
-                  </div>
-                  <div class="minute">
-                    min
-                  </div>
+                  <div>Jackson Park Express</div>
+                  <div class="direction">Reroute</div>
                 </td>
+                <td>--</td>
               </tr>
               <tr class="out-of-service">
                 <td>4</td>
-                <td>Cottage Grove</td>
-                <td>No Service</td>
                 <td>
-                  <div>
-                    --
-                  </div>
-                  <div class="minute">
-                    min
-                  </div>
+                  <div>Cottage Grove</div>
+                  <div class="direction">No service</div>
                 </td>
+                <td class="resumes">Resumes 12:10am</td>
               </tr>
               <tr class="out-of-service">
                 <td>20</td>
-                <td>Madison</td>
-                <td>No Service</td>
                 <td>
-                  <div>
-                    --
-                  </div>
-                  <div class="minute">
-                    min
-                  </div>
+                  <div>Madison</div>
+                  <div class="direction">No service</div>
                 </td>
+                <td class="resumes">Resumes 12:10am</td>
               </tr>
               <tr class="out-of-service">
                 <td>157</td>
-                <td>Streeterville/Taylor</td>
-                <td>No Service</td>
                 <td>
-                  <div>
-                    --
-                  </div>
-                  <div class="minute">
-                    min
-                  </div>
+                  <div>Streeterville/Taylor</div>
+                  <div class="direction">No service</div>
                 </td>
+                <td class="resumes">Resumes 12:10am</td>
               </tr>
             </tbody>
           </table>
